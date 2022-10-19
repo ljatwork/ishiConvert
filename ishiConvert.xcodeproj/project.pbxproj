@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		298D9475287569C4004E417B /* ConvertCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D9474287569C4004E417B /* ConvertCoordinator.swift */; };
+		298D947A28756BDF004E417B /* ConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D947928756BDF004E417B /* ConvertViewController.swift */; };
+		298D947C2875717E004E417B /* ConvertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D947B2875717E004E417B /* ConvertViewModel.swift */; };
+		298D947E28757190004E417B /* Latest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D947D28757190004E417B /* Latest.swift */; };
+		298D948428757BE8004E417B /* ConvertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D948328757BE8004E417B /* ConvertService.swift */; };
+		298D948C28758B1F004E417B /* ishiConvertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D948B28758B1F004E417B /* ishiConvertTests.swift */; };
+		298D949328758B66004E417B /* GetLatestViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D949228758B66004E417B /* GetLatestViewModelSpec.swift */; };
+		298D949528758BA6004E417B /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D949428758BA6004E417B /* MockService.swift */; };
+		29990BEC287567AC00E9796C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29990BEB287567AC00E9796C /* AppCoordinator.swift */; };
+		29A39FFB28752492005CDC11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A39FFA28752492005CDC11 /* AppDelegate.swift */; };
+		29A39FFD28752492005CDC11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A39FFC28752492005CDC11 /* SceneDelegate.swift */; };
+		29A3A00428752496005CDC11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A3A00328752496005CDC11 /* Assets.xcassets */; };
+		29A3A00728752496005CDC11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A3A00528752496005CDC11 /* LaunchScreen.storyboard */; };
+		E0570C5F2C1D6D7B699B34D8 /* Pods_ishiConvert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C724D772DCD593C932BD893A /* Pods_ishiConvert.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		298D948D28758B1F004E417B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29A39FEF28752492005CDC11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29A39FF628752492005CDC11;
+			remoteInfo = ishiConvert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		298D9474287569C4004E417B /* ConvertCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertCoordinator.swift; sourceTree = "<group>"; };
+		298D947928756BDF004E417B /* ConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertViewController.swift; sourceTree = "<group>"; };
+		298D947B2875717E004E417B /* ConvertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertViewModel.swift; sourceTree = "<group>"; };
+		298D947D28757190004E417B /* Latest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latest.swift; sourceTree = "<group>"; };
+		298D9481287579F8004E417B /* secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = secrets.xcconfig; sourceTree = "<group>"; };
+		298D948328757BE8004E417B /* ConvertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertService.swift; sourceTree = "<group>"; };
+		298D948928758B1F004E417B /* ishiConvertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ishiConvertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		298D948B28758B1F004E417B /* ishiConvertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ishiConvertTests.swift; sourceTree = "<group>"; };
+		298D949228758B66004E417B /* GetLatestViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLatestViewModelSpec.swift; sourceTree = "<group>"; };
+		298D949428758BA6004E417B /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		29990BEB287567AC00E9796C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		29A39FF728752492005CDC11 /* ishiConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ishiConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A39FFA28752492005CDC11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29A39FFC28752492005CDC11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		29A3A00328752496005CDC11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29A3A00628752496005CDC11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29A3A00828752496005CDC11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95251717C394FBEC89D83A40 /* Pods-ishiConvert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ishiConvert.release.xcconfig"; path = "Target Support Files/Pods-ishiConvert/Pods-ishiConvert.release.xcconfig"; sourceTree = "<group>"; };
+		C724D772DCD593C932BD893A /* Pods_ishiConvert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ishiConvert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68AA627C60CD418A05D6EC7 /* Pods-ishiConvert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ishiConvert.debug.xcconfig"; path = "Target Support Files/Pods-ishiConvert/Pods-ishiConvert.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		298D948628758B1F004E417B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29A39FF428752492005CDC11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0570C5F2C1D6D7B699B34D8 /* Pods_ishiConvert.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		298D947628756B1F004E417B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				298D9474287569C4004E417B /* ConvertCoordinator.swift */,
+				29990BEB287567AC00E9796C /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		298D948228757BD5004E417B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				298D948328757BE8004E417B /* ConvertService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		298D948A28758B1F004E417B /* ishiConvertTests */ = {
+			isa = PBXGroup;
+			children = (
+				298D948B28758B1F004E417B /* ishiConvertTests.swift */,
+				298D949228758B66004E417B /* GetLatestViewModelSpec.swift */,
+				298D949428758BA6004E417B /* MockService.swift */,
+			);
+			path = ishiConvertTests;
+			sourceTree = "<group>";
+		};
+		29A39FEE28752492005CDC11 = {
+			isa = PBXGroup;
+			children = (
+				29A39FF928752492005CDC11 /* ishiConvert */,
+				298D948A28758B1F004E417B /* ishiConvertTests */,
+				29A39FF828752492005CDC11 /* Products */,
+				D61D43E1F7511D1D0C5E6A87 /* Pods */,
+				57FD54BB0E9B0C172A7A86A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29A39FF828752492005CDC11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29A39FF728752492005CDC11 /* ishiConvert.app */,
+				298D948928758B1F004E417B /* ishiConvertTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29A39FF928752492005CDC11 /* ishiConvert */ = {
+			isa = PBXGroup;
+			children = (
+				298D948228757BD5004E417B /* Services */,
+				298D947628756B1F004E417B /* Coordinators */,
+				29A3A01128752A2F005CDC11 /* Views */,
+				29A3A01028752A26005CDC11 /* ViewModels */,
+				29A3A00F28752A21005CDC11 /* Models */,
+				29A39FFA28752492005CDC11 /* AppDelegate.swift */,
+				29A39FFC28752492005CDC11 /* SceneDelegate.swift */,
+				29A3A00328752496005CDC11 /* Assets.xcassets */,
+				29A3A00528752496005CDC11 /* LaunchScreen.storyboard */,
+				29A3A00828752496005CDC11 /* Info.plist */,
+				298D9481287579F8004E417B /* secrets.xcconfig */,
+			);
+			path = ishiConvert;
+			sourceTree = "<group>";
+		};
+		29A3A00F28752A21005CDC11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				298D947D28757190004E417B /* Latest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29A3A01028752A26005CDC11 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				298D947B2875717E004E417B /* ConvertViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		29A3A01128752A2F005CDC11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				298D947928756BDF004E417B /* ConvertViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57FD54BB0E9B0C172A7A86A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C724D772DCD593C932BD893A /* Pods_ishiConvert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D61D43E1F7511D1D0C5E6A87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F68AA627C60CD418A05D6EC7 /* Pods-ishiConvert.debug.xcconfig */,
+				95251717C394FBEC89D83A40 /* Pods-ishiConvert.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		298D948828758B1F004E417B /* ishiConvertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 298D948F28758B1F004E417B /* Build configuration list for PBXNativeTarget "ishiConvertTests" */;
+			buildPhases = (
+				298D948528758B1F004E417B /* Sources */,
+				298D948628758B1F004E417B /* Frameworks */,
+				298D948728758B1F004E417B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				298D948E28758B1F004E417B /* PBXTargetDependency */,
+			);
+			name = ishiConvertTests;
+			productName = ishiConvertTests;
+			productReference = 298D948928758B1F004E417B /* ishiConvertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		29A39FF628752492005CDC11 /* ishiConvert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29A3A00B28752496005CDC11 /* Build configuration list for PBXNativeTarget "ishiConvert" */;
+			buildPhases = (
+				9AC0E40DA07A0E32035D4ED5 /* [CP] Check Pods Manifest.lock */,
+				29A39FF328752492005CDC11 /* Sources */,
+				29A39FF428752492005CDC11 /* Frameworks */,
+				29A39FF528752492005CDC11 /* Resources */,
+				4069D0C2D7CC1DC08A619F23 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ishiConvert;
+			productName = ishiConvert;
+			productReference = 29A39FF728752492005CDC11 /* ishiConvert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29A39FEF28752492005CDC11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					298D948828758B1F004E417B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 29A39FF628752492005CDC11;
+					};
+					29A39FF628752492005CDC11 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 29A39FF228752492005CDC11 /* Build configuration list for PBXProject "ishiConvert" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29A39FEE28752492005CDC11;
+			productRefGroup = 29A39FF828752492005CDC11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29A39FF628752492005CDC11 /* ishiConvert */,
+				298D948828758B1F004E417B /* ishiConvertTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		298D948728758B1F004E417B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29A39FF528752492005CDC11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A3A00728752496005CDC11 /* LaunchScreen.storyboard in Resources */,
+				29A3A00428752496005CDC11 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4069D0C2D7CC1DC08A619F23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ishiConvert/Pods-ishiConvert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ishiConvert/Pods-ishiConvert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ishiConvert/Pods-ishiConvert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AC0E40DA07A0E32035D4ED5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ishiConvert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		298D948528758B1F004E417B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298D948C28758B1F004E417B /* ishiConvertTests.swift in Sources */,
+				298D949328758B66004E417B /* GetLatestViewModelSpec.swift in Sources */,
+				298D949528758BA6004E417B /* MockService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29A39FF328752492005CDC11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298D948428757BE8004E417B /* ConvertService.swift in Sources */,
+				298D947E28757190004E417B /* Latest.swift in Sources */,
+				298D9475287569C4004E417B /* ConvertCoordinator.swift in Sources */,
+				29990BEC287567AC00E9796C /* AppCoordinator.swift in Sources */,
+				298D947C2875717E004E417B /* ConvertViewModel.swift in Sources */,
+				298D947A28756BDF004E417B /* ConvertViewController.swift in Sources */,
+				29A39FFB28752492005CDC11 /* AppDelegate.swift in Sources */,
+				29A39FFD28752492005CDC11 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		298D948E28758B1F004E417B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29A39FF628752492005CDC11 /* ishiConvert */;
+			targetProxy = 298D948D28758B1F004E417B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29A3A00528752496005CDC11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29A3A00628752496005CDC11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		298D949028758B1F004E417B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K7W3JUDYQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ylaya.training.ishiConvertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ishiConvert.app/ishiConvert";
+			};
+			name = Debug;
+		};
+		298D949128758B1F004E417B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K7W3JUDYQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ylaya.training.ishiConvertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ishiConvert.app/ishiConvert";
+			};
+			name = Release;
+		};
+		29A3A00928752496005CDC11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298D9481287579F8004E417B /* secrets.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29A3A00A28752496005CDC11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298D9481287579F8004E417B /* secrets.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29A3A00C28752496005CDC11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F68AA627C60CD418A05D6EC7 /* Pods-ishiConvert.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K7W3JUDYQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ishiConvert/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ylaya.training.ishiConvert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		29A3A00D28752496005CDC11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95251717C394FBEC89D83A40 /* Pods-ishiConvert.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K7W3JUDYQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ishiConvert/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ylaya.training.ishiConvert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		298D948F28758B1F004E417B /* Build configuration list for PBXNativeTarget "ishiConvertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				298D949028758B1F004E417B /* Debug */,
+				298D949128758B1F004E417B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29A39FF228752492005CDC11 /* Build configuration list for PBXProject "ishiConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29A3A00928752496005CDC11 /* Debug */,
+				29A3A00A28752496005CDC11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29A3A00B28752496005CDC11 /* Build configuration list for PBXNativeTarget "ishiConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29A3A00C28752496005CDC11 /* Debug */,
+				29A3A00D28752496005CDC11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29A39FEF28752492005CDC11 /* Project object */;
+}
